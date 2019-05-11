@@ -4,7 +4,8 @@
 
 <!-- * Live Demo: <https://example.bleh> -->
 
-![Hot Restaurant Image](images/home-page.PNG)
 <p align="center">
 Home Page
 </p>
+
+![Hot Restaurant Image](images/home-page.PNG)
