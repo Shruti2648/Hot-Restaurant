@@ -16,7 +16,5 @@
     "url": "https://github.com/Shruti2648/Hot-Restaurant/issues"
   },
   "homepage": "https://github.com/Shruti2648/Hot-Restaurant#readme",
-  "dependencies": {
-    "express.js": "^1.0.0"
-  }
+  "dependencies": {}
 }
