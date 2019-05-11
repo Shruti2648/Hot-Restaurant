@@ -2,6 +2,7 @@
 
 var express = require("express");
 var path = require("path");
+// var bodyParser = require('body-parser');
 
 //set up express
 var app = express();
@@ -11,6 +12,7 @@ console.log("Listening on PORT "+ PORT)
 //set up the express app the handle data parsing
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
+// app.use(bodyParser.text());
 
 //routes
 //basic route that sents user first to the ajax page
@@ -26,7 +28,7 @@ app.get("/tables", function(req, res){
 
 app.get("/reserve", function(req, res){
     console.log("reserve page requested");
-    res.sendFile(path.join(__dirname,"reserve.html"))
+    res.sendFile(path.join(__dirname,"reserve.html"));
 });
 
 
@@ -48,6 +50,12 @@ var reservation = [
         unique: "12345",
     },
 ];
+
+app.get('/api/tables', function (req, res) {
+    // console.log('table data requested');
+    // var response = "testing";
+    res.json(tables);
+  });
 
 
 //add new reso
