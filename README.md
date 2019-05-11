@@ -22,3 +22,10 @@ Reservation Page
 </p>
 
 ![Hot Restaurant Reservation](images/reservations.png)
+
+## App created by:
+
+* "Tony Kruso" <https://github.com/tonykruso>
+* "Danielle Blaney" <https://github.com/DaniBlaney>
+* "Shruti Jadhav " <https://github.com/Shruti2648>
+* "Shreya Suman" <https://github.com/Shreyaasumann>
