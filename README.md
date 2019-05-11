@@ -14,4 +14,4 @@ Home Page
 Reservation Page
 </p>
 
-![Hot Restaurant Reservation](images/reservation.png)
+![Hot Restaurant Reservation](images/reservations.png)
