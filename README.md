@@ -8,4 +8,10 @@
 Home Page
 </p>
 
-![Hot Restaurant Image](images/home-page.PNG)
+![Hot Restaurant Image](images/home.png)
+
+<p align="center">
+Reservation Page
+</p>
+
+![Hot Restaurant Reservation](images/reservation.png)
