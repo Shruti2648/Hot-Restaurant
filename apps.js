@@ -13,7 +13,7 @@ console.log("Listening on PORT "+ PORT)
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 // app.use(bodyParser.text());
-
+app.use(express.static(__dirname + '/public'));
 //routes
 //basic route that sents user first to the ajax page
 app.get("/", function(req, res){
