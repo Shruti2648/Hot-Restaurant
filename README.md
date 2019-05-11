@@ -4,4 +4,4 @@
 
 <!-- * Live Demo: <https://example.bleh> -->
 
-![Hot Restaurant Image](images/home-page.png)
+![Hot Restaurant Image](images/home-page.PNG)
