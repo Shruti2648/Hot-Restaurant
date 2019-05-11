@@ -41,3 +41,23 @@ var reservation = [
         unique: "12345",
     },
 ];
+
+var waitList = [
+    {
+        customerName: "Joe",
+        phoneNumber: "6791231234",
+        customerEmail: "jidslo@hotmail.com",
+        customerId: "J",
+    }
+]
+
+//add new reso
+app.post("", function(req, res){
+    var newReservation = req.body;
+
+    newReservation.routeName = newReservation.name.replace(/\s+/g, "").toLowerCase();
+    console.log(newReservation);
+    reservation.push(newReservation);
+    res.json(newReservation);
+
+});
