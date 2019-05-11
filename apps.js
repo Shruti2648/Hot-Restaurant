@@ -14,15 +14,22 @@ app.use(express.json());
 //routes
 //basic route that sents user first to the ajax page
 app.get("/", function(req, res){
+    console.log("homepage requested");
     res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname, "reserve.html"));
+app.get("/tables", function(req, res){
+    console.log("table page requested");
+    res.sendFile(path.join(__dirname, "tables.html"));
+});
+
+app.get("/reserve", function(req, res){
+    console.log("reserve page requested");
+    res.sendFile(path.join(__dirname,"reserve.html"))
 });
 
 
-//adding new reservations
+//adding new reservations (DATA)
 
 var reservation = [
     {
@@ -41,14 +48,6 @@ var reservation = [
     },
 ];
 
-var waitList = [
-    {
-        customerName: "Joe",
-        phoneNumber: "6791231234",
-        customerEmail: "jidslo@hotmail.com",
-        customerId: "J",
-    }
-]
 
 //add new reso
 app.post("", function(req, res){
@@ -58,5 +57,10 @@ app.post("", function(req, res){
     console.log(newReservation);
     reservation.push(newReservation);
     res.json(newReservation);
+});
 
+
+
+app.listen(PORT, function () {
+	console.log('App listening on PORT ' + PORT);
 });
